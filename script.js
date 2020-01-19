@@ -1,27 +1,25 @@
 const Red = document.getElementById('r')
 const Green = document.getElementById('g')
 const Blue = document.getElementById('b')
-const input = document.querySelectorAll('input')
+const inputPanel = document.querySelector(".inputPanel")
 
-input.forEach(input=>{input.addEventListener('change', function change(){
+inputPanel.addEventListener('change', function change(){
   let red = `${Red.value}`
   let green = `${Green.value}`
   let blue = `${Blue.value}`
   let hex = fullColorHex(red,green,blue)
   document.getElementById('hexPanel').innerHTML = hex 
   document.documentElement.style.setProperty(`--base`, hex)
-  
-})})
+})
 
-input.forEach(input=>{input.addEventListener('mousemove', function change(){
+inputPanel.addEventListener('mousemove', function change(){
   let red = `${Red.value}`
   let green = `${Green.value}`
   let blue = `${Blue.value}`
   let hex = fullColorHex(red,green,blue)
   document.getElementById('hexPanel').innerHTML = hex 
   document.documentElement.style.setProperty(`--base`, hex)
-  
-})})
+})
 
 function inputValueR(x){
   let valueR = document.getElementById(x).value
