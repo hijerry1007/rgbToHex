@@ -1,6 +1,6 @@
-const Red = document.getElementById('r')
-const Green = document.getElementById('g')
-const Blue = document.getElementById('b')
+const Red = document.getElementById('R')
+const Green = document.getElementById('G')
+const Blue = document.getElementById('B')
 const inputPanel = document.querySelector(".inputPanel")
 
 inputPanel.addEventListener('change', function change(){
