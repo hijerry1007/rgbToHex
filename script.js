@@ -21,26 +21,10 @@ inputPanel.addEventListener('mousemove', function change(){
   document.documentElement.style.setProperty(`--base`, hex)
 })
 
-function inputValueR(x){
-  let valueR = document.getElementById(x).value
-  numberR = valueR
-　document.getElementById('valueR').innerHTML = valueR 
-  return valueR  
-}
-
-
-function inputValueG(x){
-　let valueG = document.getElementById(x).value
-  numberG = valueG
-　document.getElementById('valueG').innerHTML = valueG
-  return valueG
-}
-
-function inputValueB(x){
-　let valueB = document.getElementById(x).value;
-  numberB = valueB
-　document.getElementById('valueB').innerHTML = valueB
-  return valueB
+function inputValue(x){
+  let value = document.getElementById(x).value
+　document.getElementById(`value${x}`).innerHTML = value 
+  return value  
 }
 
 function rgbToHex (rgb) { 
